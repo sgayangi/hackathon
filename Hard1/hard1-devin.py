@@ -36,12 +36,10 @@ if __name__ == '__main__':
     friends = []
     n = int(input())
     for i in range(n):
-        friends.append(list(map(int, input().split(' '))))
+        friends.append(list(map(int, input().strip().split(' '))))
     m = int(input())
-    invite = list(map(con, input().split(' ')))
+    invite = list(map(con, input().strip().split(' ')))
 
-    #print(friends, invite)
-    #print(make_list(n, friends))
     print(invite_num(make_list(n, friends), invite))
 
 
