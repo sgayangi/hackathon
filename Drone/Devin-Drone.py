@@ -24,7 +24,7 @@ def can_fly(px, py, string):
         can_x = True
 
     else:
-        if l <= -px:
+        if l >= -px:
             can_x = True
 
     if py > 0:
@@ -33,7 +33,7 @@ def can_fly(px, py, string):
     elif py == 0:
         can_y = True
     else:
-        if d <= -py:
+        if d >= -py:
             can_y = True
 
     if can_y and can_x:
