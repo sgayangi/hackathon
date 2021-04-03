@@ -13,7 +13,7 @@ def can_fly(px, py, string):
         else:
             d += 1
 
-
+    print(l, r, u, d)
     can_x = False
     can_y = False
     if px > 0:
